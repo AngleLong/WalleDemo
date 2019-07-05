@@ -180,7 +180,7 @@ yyb #应用宝
 
 - 错误：Plugin requires 'APK Signature Scheme v2 Enabled' for ProductRelease.
 关于这个错误是你没有在项目中配置相应的jks文件配置上就好了！
-![0042820608a5e215d5894ea327ec96cc.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190704_11git.png)
+![0042820608a5e215d5894ea327ec96cc.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190704_11.png)
 
 - 命令行无法成功打包
 > 其实这个问题我也纠结了好久，为什么呢？我按照github的说法敲了命令行，但是怎么也不好使。最后我发现了一件事情，其实多渠道的时候，已经生成了相应的assemble，所以按照github上就无法完成打包了。换成上面截图的assembleXXXReleaseChannels就可以了！注意一下相应的明明就可以了！
