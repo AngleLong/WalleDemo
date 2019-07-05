@@ -165,22 +165,22 @@ yyb #应用宝
 
 关于这个打包其实你应该可以使用命令行，但是我觉得这样很喽，所以呢？你这样点一个按钮，全部搞定！
 
-![e0d2e67af4e71fd8a1eeb652e73e552a.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_8.png)
+![e0d2e67af4e71fd8a1eeb652e73e552a.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190704_8.png)
 
 注意我圈起来的这个东西，这个是正式版的构建，你要拿正式版的构建才好使，测试版的你没有必要打渠道包！你觉得呢？（☺️😒☺️夹在产品中的我）
 
 点一下就好了，紧接着你会啊在这个路径下看到你想要的东西！
 
-![2cc87acb06fefe53748376913959d1eb.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_9.png)
+![2cc87acb06fefe53748376913959d1eb.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190704_9.png)
 
 ## 关于我碰到的一些问题
 - 错误：All flavors must now belong to a named flavor dimension.
 关于这个错误网上有很多办法，基本上就是在下图的位置添加我圈起来的一句话
-![309a59641a87c362854c6049c8ac8438.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_10.png)
+![309a59641a87c362854c6049c8ac8438.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190704_10.png)
 
 - 错误：Plugin requires 'APK Signature Scheme v2 Enabled' for ProductRelease.
 关于这个错误是你没有在项目中配置相应的jks文件配置上就好了！
-![0042820608a5e215d5894ea327ec96cc.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_11git.png)
+![0042820608a5e215d5894ea327ec96cc.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190704_11git.png)
 
 - 命令行无法成功打包
 > 其实这个问题我也纠结了好久，为什么呢？我按照github的说法敲了命令行，但是怎么也不好使。最后我发现了一件事情，其实多渠道的时候，已经生成了相应的assemble，所以按照github上就无法完成打包了。换成上面截图的assembleXXXReleaseChannels就可以了！注意一下相应的明明就可以了！
