@@ -56,11 +56,11 @@ android:label="${app_name}"
 
 你需要在label中设置这个，才能让app的名称进行更改，如果你要是设置了icon的话，也是要像上面这样修改的！我就不在多废话了！
 
-![cf55594249d04dc0052d460ae994f0d8.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_1)
+![cf55594249d04dc0052d460ae994f0d8.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_1.png)
 
 **这个时候，你要做的是Sync Now，然后你会发现在这个文件路径下看到相应的java文件**
 
-![ff12b2ce47ef4c4908dcb4614644d68c.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_3)
+![ff12b2ce47ef4c4908dcb4614644d68c.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_3.png)
 
 你会发现，这个和你在主module的build.gradle中设置的内容差不多，其实无非就是apt写到项目中的！
 
@@ -97,11 +97,11 @@ public class EnvType {
 - 打包的细节
 > 如果你正常打包的话，你会看到相应的渠道包，但是我毕竟是一个懒的不能再懒的人，这个我都闲麻烦怎么办，当然有办法！
 
-![96f8848a09b5d08de1088343538341b4.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_4)
+![96f8848a09b5d08de1088343538341b4.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_4.png)
 
 点这个，完美的打出相应的渠道包，真的是哪里不会点哪里啊！
 
-![bc7b8a37246c15257c6f0f5393d3f59a.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_6)
+![bc7b8a37246c15257c6f0f5393d3f59a.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_6.png)
 
 然后你会在相应的路径看到对应的渠道包，不用感谢我！！！哈哈。。。
 
@@ -109,7 +109,7 @@ public class EnvType {
 在写本文的时候，github上最新的版本是1.1.6，所以这里就拿它祭我的5米大刀吧！
 
 - 在项目的build.gradle中添加配置相应的插件！
-![82ce0685a8304b971931ac2f479a52bc.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_7)
+![82ce0685a8304b971931ac2f479a52bc.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_7.png)
 上面注释已经写上了，所以我也就不多逼逼了
 - 在相应主module中添加依赖的插件以及相应的引用
 ```
@@ -165,22 +165,22 @@ yyb #应用宝
 
 关于这个打包其实你应该可以使用命令行，但是我觉得这样很喽，所以呢？你这样点一个按钮，全部搞定！
 
-![e0d2e67af4e71fd8a1eeb652e73e552a.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_8)
+![e0d2e67af4e71fd8a1eeb652e73e552a.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_8.png)
 
 注意我圈起来的这个东西，这个是正式版的构建，你要拿正式版的构建才好使，测试版的你没有必要打渠道包！你觉得呢？（☺️😒☺️夹在产品中的我）
 
 点一下就好了，紧接着你会啊在这个路径下看到你想要的东西！
 
-![2cc87acb06fefe53748376913959d1eb.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_9)
+![2cc87acb06fefe53748376913959d1eb.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_9.png)
 
 ## 关于我碰到的一些问题
 - 错误：All flavors must now belong to a named flavor dimension.
 关于这个错误网上有很多办法，基本上就是在下图的位置添加我圈起来的一句话
-![309a59641a87c362854c6049c8ac8438.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_10)
+![309a59641a87c362854c6049c8ac8438.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_10.png)
 
 - 错误：Plugin requires 'APK Signature Scheme v2 Enabled' for ProductRelease.
 关于这个错误是你没有在项目中配置相应的jks文件配置上就好了！
-![0042820608a5e215d5894ea327ec96cc.png](https://github.com/AngleLong/WalleDemo/img/Snip20190703_11)
+![0042820608a5e215d5894ea327ec96cc.png](https://github.com/AngleLong/WalleDemo/blob/master/img/Snip20190703_11git.png)
 
 - 命令行无法成功打包
 > 其实这个问题我也纠结了好久，为什么呢？我按照github的说法敲了命令行，但是怎么也不好使。最后我发现了一件事情，其实多渠道的时候，已经生成了相应的assemble，所以按照github上就无法完成打包了。换成上面截图的assembleXXXReleaseChannels就可以了！注意一下相应的明明就可以了！
